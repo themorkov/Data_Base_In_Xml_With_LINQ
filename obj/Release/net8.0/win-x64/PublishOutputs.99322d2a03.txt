@@ -1,0 +1,2 @@
+C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\bin\Release\net8.0\publish\win-x64\Data_Base_In_Xml_With_LINQ.pdb
+C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\bin\Release\net8.0\publish\win-x64\Data_Base_In_Xml_With_LINQ.exe
