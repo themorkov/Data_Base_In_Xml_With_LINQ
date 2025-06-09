@@ -29,7 +29,8 @@ namespace Data_Base_In_Xml_With_LINQ
                     {
                         Console.WriteLine("Для изменения информации о организации нажмите 1:");
                         Console.WriteLine("Для удаления организации нажмите 2:");
-                        key = Console.ReadKey(true);
+                        Console.WriteLine();
+                       key = Console.ReadKey(true);
                         if (key.Key == ConsoleKey.D1)
                         {
                             xmlFile.ChangeCompany(login, password);

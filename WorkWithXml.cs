@@ -26,12 +26,14 @@ namespace Data_Base_In_Xml_With_LINQ
         ///Если, файл существует, то инициализирует экземпляр класса <c>WorkWithXml</c>.
         ///Если, нет то предлагает создать файл с дальнейшей инициализацией.
         ///</summary>
-        ///<param name="adress"> Содержит путь к XML файлу.</param>
-        public WorkWithXml(string adress)
+        ///<param name="address"> Содержит путь к XML файлу.</param>
+        private string? address; 
+        public WorkWithXml(string address)
         {
-            if (File.Exists(adress))
+            if (File.Exists(address))
             {
-                xmlDocument = XDocument.Load(adress);
+                xmlDocument = XDocument.Load(address);
+                this.address = address;
             }
             else
             {
@@ -42,11 +44,8 @@ namespace Data_Base_In_Xml_With_LINQ
                 if (key.Key == ConsoleKey.D1)
                 {
                     xmlDocument = new XDocument(new XElement("companies"));
-                    xmlDocument.Save(adress);
-                }
-                else
-                {
-                    System.Environment.Exit(0);
+                    xmlDocument.Save(address);
+                    this.address = address;
                 }
             }
 
@@ -258,7 +257,7 @@ namespace Data_Base_In_Xml_With_LINQ
                 new XElement("city", city),
                 new XElement("phone", phone),
                 new XElement("vacancies")));
-            xmlDocument.Save("companies2.xml");
+            xmlDocument.Save(address);
             Console.WriteLine($"Файл компании {name} был успешно создан!");
             return true;
         }
@@ -287,7 +286,7 @@ namespace Data_Base_In_Xml_With_LINQ
                             new XElement("position", position),
                             new XElement("experience", experience),
                             new XElement("salary", salary)));
-                xmlDocument.Save("companies2.xml");
+                xmlDocument.Save(address);
                 Console.WriteLine($"Вакансия {position} была добавлена!");
                 return true;
             }
@@ -313,7 +312,7 @@ namespace Data_Base_In_Xml_With_LINQ
                 Console.WriteLine($"Старый номер организации: {phone?.Value}");
                 phone.Value = newPhone;
                 Console.WriteLine($"Новый номер организации: {phone?.Value}");
-                xmlDocument.Save("companies2.xml");
+                xmlDocument.Save(address);
                 return true;
             }
             else
@@ -352,7 +351,7 @@ namespace Data_Base_In_Xml_With_LINQ
                         experience.Value = newExperience;
                         salary.Value = newSalary;
                         Console.WriteLine($"Изменения для вакансии {position.Value} успешно сохранены.");
-                        xmlDocument.Save("companies2.xml");
+                        xmlDocument.Save(address);
                         return true;
                     }
                     else
@@ -393,7 +392,7 @@ namespace Data_Base_In_Xml_With_LINQ
                     {
                         vacancy.Remove();
                         Console.WriteLine($"Вакансия {position.Value} была удалена.");
-                        xmlDocument.Save("companies2.xml");
+                        xmlDocument.Save(address);
                         return true;
                     }
                     else
@@ -455,7 +454,7 @@ namespace Data_Base_In_Xml_With_LINQ
             if (company != null)
             {
                 company.Remove();
-                xmlDocument.Save("companies2.xml");
+                xmlDocument.Save(address);
                 Console.WriteLine($"Организация {companyName} была удалена из базы.");
                 return true;
             }

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<companies>
+  <company name="Тест" password="1234">
+    <city>Любой</city>
+    <phone>1234</phone>
+    <vacancies>
+      <vacancy>
+        <position>Любая</position>
+        <experience>1</experience>
+        <salary>200</salary>
+      </vacancy>
+    </vacancies>
+  </company>
+  <company name="Тест2" password="2345">
+    <city>Дюбой</city>
+    <phone>2345</phone>
+    <vacancies>
+      <vacancy>
+        <position>Любая</position>
+        <experience>1</experience>
+        <salary>222</salary>
+      </vacancy>
+      <vacancy>
+        <position>Любая2</position>
+        <experience>3</experience>
+        <salary>300</salary>
+      </vacancy>
+    </vacancies>
+  </company>
+</companies>

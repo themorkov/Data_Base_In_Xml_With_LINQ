@@ -195,3 +195,4 @@ C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_
 C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\obj\Release\net8.0\win-x64\Data_Base_In_Xml_With_LINQ.pdb
 C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\obj\Release\net8.0\win-x64\Data_Base_In_Xml_With_LINQ.genruntimeconfig.cache
 C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\obj\Release\net8.0\win-x64\ref\Data_Base_In_Xml_With_LINQ.dll
+C:\Users\Petr\source\repos\4th term\Data_Base_In_Xml_With_LINQ\Data_Base_In_Xml_With_LINQ\obj\Release\net8.0\win-x64\Data_Base_In_Xml_With_LINQ.sourcelink.json

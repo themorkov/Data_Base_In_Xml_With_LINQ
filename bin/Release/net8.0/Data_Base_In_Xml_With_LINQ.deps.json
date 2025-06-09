@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Data_Base_In_Xml_With_LINQ/1.0.0": {
+        "runtime": {
+          "Data_Base_In_Xml_With_LINQ.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Data_Base_In_Xml_With_LINQ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

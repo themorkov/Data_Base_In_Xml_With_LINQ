@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Data_Base_In_Xml_With_LINQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9732329a6946fc2f365964eeb2e95dd1c7c0b9a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Data_Base_In_Xml_With_LINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Data_Base_In_Xml_With_LINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
